@@ -12,6 +12,11 @@
 		598003631E9675CF00C1314A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003611E9675CF00C1314A /* Main.storyboard */; };
 		598003651E9675CF00C1314A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598003641E9675CF00C1314A /* Assets.xcassets */; };
 		598003681E9675CF00C1314A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003661E9675CF00C1314A /* LaunchScreen.storyboard */; };
+		5980037A1E96811D00C1314A /* NewsApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003791E96811D00C1314A /* NewsApiHTTPClient.m */; };
+		5980037D1E96842200C1314A /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980037C1E96842200C1314A /* ArticleModel.m */; };
+		598003801E968A1900C1314A /* SourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980037F1E968A1900C1314A /* SourceModel.m */; };
+		598003831E9695BE00C1314A /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003821E9695BE00C1314A /* NetworkService.m */; };
+		598003871E96C95200C1314A /* SourcesListVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003861E96C95200C1314A /* SourcesListVCViewController.m */; };
 		B108FA4BF241B875BBEA80C8 /* libPods-NewsTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7137B55F53CB2A8605FD1E7A /* libPods-NewsTracker.a */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,16 @@
 		598003641E9675CF00C1314A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598003671E9675CF00C1314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598003691E9675CF00C1314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		598003781E96811D00C1314A /* NewsApiHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsApiHTTPClient.h; path = Networking/NewsApiHTTPClient/NewsApiHTTPClient.h; sourceTree = "<group>"; };
+		598003791E96811D00C1314A /* NewsApiHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsApiHTTPClient.m; path = Networking/NewsApiHTTPClient/NewsApiHTTPClient.m; sourceTree = "<group>"; };
+		5980037B1E96842200C1314A /* ArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleModel.h; path = Models/ArticleModel/ArticleModel.h; sourceTree = "<group>"; };
+		5980037C1E96842200C1314A /* ArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleModel.m; path = Models/ArticleModel/ArticleModel.m; sourceTree = "<group>"; };
+		5980037E1E968A1900C1314A /* SourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourceModel.h; path = SourceModel/SourceModel.h; sourceTree = "<group>"; };
+		5980037F1E968A1900C1314A /* SourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourceModel.m; path = SourceModel/SourceModel.m; sourceTree = "<group>"; };
+		598003811E9695BE00C1314A /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkService.h; path = NetworkService/NetworkService.h; sourceTree = "<group>"; };
+		598003821E9695BE00C1314A /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkService.m; path = NetworkService/NetworkService.m; sourceTree = "<group>"; };
+		598003851E96C95200C1314A /* SourcesListVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourcesListVCViewController.h; path = Controllers/SourcesListVCViewController.h; sourceTree = "<group>"; };
+		598003861E96C95200C1314A /* SourcesListVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourcesListVCViewController.m; path = Controllers/SourcesListVCViewController.m; sourceTree = "<group>"; };
 		6353ED71CC4DD8B369AA9340 /* Pods-NewsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker.release.xcconfig"; sourceTree = "<group>"; };
 		7137B55F53CB2A8605FD1E7A /* libPods-NewsTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7189645F4A685B2B2D8C3526 /* Pods-NewsTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +135,7 @@
 		598003711E96769900C1314A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				598003841E96C91700C1314A /* SourcesListVC */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +152,8 @@
 		598003731E967E3D00C1314A /* SourceModel */ = {
 			isa = PBXGroup;
 			children = (
+				5980037E1E968A1900C1314A /* SourceModel.h */,
+				5980037F1E968A1900C1314A /* SourceModel.m */,
 			);
 			name = SourceModel;
 			sourceTree = "<group>";
@@ -143,6 +161,8 @@
 		598003741E967E5800C1314A /* ArticleModel */ = {
 			isa = PBXGroup;
 			children = (
+				5980037B1E96842200C1314A /* ArticleModel.h */,
+				5980037C1E96842200C1314A /* ArticleModel.m */,
 			);
 			name = ArticleModel;
 			sourceTree = "<group>";
@@ -159,6 +179,8 @@
 		598003761E967F6700C1314A /* NewsApiHTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				598003781E96811D00C1314A /* NewsApiHTTPClient.h */,
+				598003791E96811D00C1314A /* NewsApiHTTPClient.m */,
 			);
 			name = NewsApiHTTPClient;
 			sourceTree = "<group>";
@@ -166,8 +188,19 @@
 		598003771E967FCE00C1314A /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				598003811E9695BE00C1314A /* NetworkService.h */,
+				598003821E9695BE00C1314A /* NetworkService.m */,
 			);
 			name = NetworkService;
+			sourceTree = "<group>";
+		};
+		598003841E96C91700C1314A /* SourcesListVC */ = {
+			isa = PBXGroup;
+			children = (
+				598003851E96C95200C1314A /* SourcesListVCViewController.h */,
+				598003861E96C95200C1314A /* SourcesListVCViewController.m */,
+			);
+			name = SourcesListVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +328,11 @@
 			files = (
 				5980035D1E9675CF00C1314A /* AppDelegate.m in Sources */,
 				5980035A1E9675CF00C1314A /* main.m in Sources */,
+				598003871E96C95200C1314A /* SourcesListVCViewController.m in Sources */,
+				5980037D1E96842200C1314A /* ArticleModel.m in Sources */,
+				598003801E968A1900C1314A /* SourceModel.m in Sources */,
+				598003831E9695BE00C1314A /* NetworkService.m in Sources */,
+				5980037A1E96811D00C1314A /* NewsApiHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
