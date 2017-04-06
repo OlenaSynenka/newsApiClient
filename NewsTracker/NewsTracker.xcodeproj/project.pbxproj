@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5980035A1E9675CF00C1314A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003591E9675CF00C1314A /* main.m */; };
 		5980035D1E9675CF00C1314A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980035C1E9675CF00C1314A /* AppDelegate.m */; };
-		598003601E9675CF00C1314A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980035F1E9675CF00C1314A /* ViewController.m */; };
 		598003631E9675CF00C1314A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003611E9675CF00C1314A /* Main.storyboard */; };
 		598003651E9675CF00C1314A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598003641E9675CF00C1314A /* Assets.xcassets */; };
 		598003681E9675CF00C1314A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003661E9675CF00C1314A /* LaunchScreen.storyboard */; };
+		B108FA4BF241B875BBEA80C8 /* libPods-NewsTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7137B55F53CB2A8605FD1E7A /* libPods-NewsTracker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,13 @@
 		598003591E9675CF00C1314A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5980035B1E9675CF00C1314A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5980035C1E9675CF00C1314A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5980035E1E9675CF00C1314A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5980035F1E9675CF00C1314A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		598003621E9675CF00C1314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		598003641E9675CF00C1314A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598003671E9675CF00C1314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598003691E9675CF00C1314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6353ED71CC4DD8B369AA9340 /* Pods-NewsTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker.release.xcconfig"; sourceTree = "<group>"; };
+		7137B55F53CB2A8605FD1E7A /* libPods-NewsTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7189645F4A685B2B2D8C3526 /* Pods-NewsTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B108FA4BF241B875BBEA80C8 /* libPods-NewsTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1695A6188F8F05F8D6B35C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7189645F4A685B2B2D8C3526 /* Pods-NewsTracker.debug.xcconfig */,
+				6353ED71CC4DD8B369AA9340 /* Pods-NewsTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		476C8733A68520A33C2EC5F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7137B55F53CB2A8605FD1E7A /* libPods-NewsTracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5980034C1E9675CF00C1314A = {
 			isa = PBXGroup;
 			children = (
 				598003571E9675CF00C1314A /* NewsTracker */,
 				598003561E9675CF00C1314A /* Products */,
+				1695A6188F8F05F8D6B35C93 /* Pods */,
+				476C8733A68520A33C2EC5F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +79,11 @@
 		598003571E9675CF00C1314A /* NewsTracker */ = {
 			isa = PBXGroup;
 			children = (
-				5980035B1E9675CF00C1314A /* AppDelegate.h */,
-				5980035C1E9675CF00C1314A /* AppDelegate.m */,
-				5980035E1E9675CF00C1314A /* ViewController.h */,
-				5980035F1E9675CF00C1314A /* ViewController.m */,
+				598003751E967F0400C1314A /* Networking */,
+				598003721E9677C100C1314A /* Application */,
+				598003711E96769900C1314A /* Controllers */,
+				598003701E96769100C1314A /* Views */,
+				5980036F1E96768700C1314A /* Models */,
 				598003611E9675CF00C1314A /* Main.storyboard */,
 				598003641E9675CF00C1314A /* Assets.xcassets */,
 				598003661E9675CF00C1314A /* LaunchScreen.storyboard */,
@@ -79,6 +101,75 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5980036F1E96768700C1314A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				598003741E967E5800C1314A /* ArticleModel */,
+				598003731E967E3D00C1314A /* SourceModel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		598003701E96769100C1314A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		598003711E96769900C1314A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		598003721E9677C100C1314A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5980035B1E9675CF00C1314A /* AppDelegate.h */,
+				5980035C1E9675CF00C1314A /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		598003731E967E3D00C1314A /* SourceModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SourceModel;
+			sourceTree = "<group>";
+		};
+		598003741E967E5800C1314A /* ArticleModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ArticleModel;
+			sourceTree = "<group>";
+		};
+		598003751E967F0400C1314A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				598003771E967FCE00C1314A /* NetworkService */,
+				598003761E967F6700C1314A /* NewsApiHTTPClient */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		598003761E967F6700C1314A /* NewsApiHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NewsApiHTTPClient;
+			sourceTree = "<group>";
+		};
+		598003771E967FCE00C1314A /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetworkService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5980036C1E9675CF00C1314A /* Build configuration list for PBXNativeTarget "NewsTracker" */;
 			buildPhases = (
+				C64A321C38959493503D2457 /* 📦 Check Pods Manifest.lock */,
 				598003511E9675CF00C1314A /* Sources */,
 				598003521E9675CF00C1314A /* Frameworks */,
 				598003531E9675CF00C1314A /* Resources */,
+				694EDCF06B899EE4EE84453F /* 📦 Embed Pods Frameworks */,
+				C62638AF1D26CBEEAC3840CB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +240,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		694EDCF06B899EE4EE84453F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62638AF1D26CBEEAC3840CB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsTracker/Pods-NewsTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C64A321C38959493503D2457 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		598003511E9675CF00C1314A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598003601E9675CF00C1314A /* ViewController.m in Sources */,
 				5980035D1E9675CF00C1314A /* AppDelegate.m in Sources */,
 				5980035A1E9675CF00C1314A /* main.m in Sources */,
 			);
@@ -269,6 +410,7 @@
 		};
 		5980036D1E9675CF00C1314A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7189645F4A685B2B2D8C3526 /* Pods-NewsTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9QBK9S48W2;
@@ -281,6 +423,7 @@
 		};
 		5980036E1E9675CF00C1314A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6353ED71CC4DD8B369AA9340 /* Pods-NewsTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9QBK9S48W2;
@@ -310,6 +453,7 @@
 				5980036E1E9675CF00C1314A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
