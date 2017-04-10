@@ -80,9 +80,10 @@
         ((SourcesCollectionViewLayout*)self.collectionView.collectionViewLayout).delegate = self;
     }
     
-    self.sourcesLogo = [NSMutableArray new];
+    [self.collectionView setContentInset:UIEdgeInsetsMake(-20, 0, 0, 0)];
     
-    self.categories = @[@"Business", @"Entertainment", @"Gaming", @"General", @"Music", @"Politics", @"Science and Nature", @"Sport", @"Technology"];
+    self.sourcesLogo = [NSMutableArray new];
+        self.categories = @[@"Business", @"Entertainment", @"Gaming", @"General", @"Music", @"Politics", @"Science and Nature", @"Sport", @"Technology"];
     self.categoriesIDs = @[@"business", @"entertainment", @"gaming", @"general", @"music", @"politics", @"science-and-nature", @"sport", @"technology"];
     
     NetworkService *networkService = [NetworkService new];

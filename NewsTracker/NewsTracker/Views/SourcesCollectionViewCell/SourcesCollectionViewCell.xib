@@ -21,31 +21,41 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efa-EU-p9l">
-                        <rect key="frame" x="0.0" y="8" width="206" height="154"/>
+                        <rect key="frame" x="8" y="8" width="190" height="154"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="154" id="Im3-VM-ori"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FAL-vu-KS3">
-                        <rect key="frame" x="0.0" y="162" width="206" height="30"/>
+                        <rect key="frame" x="8" y="162" width="190" height="30"/>
                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="contentView.layer.cornerRadius" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
             </view>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="FAL-vu-KS3" secondAttribute="trailing" id="A8Y-bX-lIf"/>
+                <constraint firstItem="FAL-vu-KS3" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailingMargin" id="A8Y-bX-lIf"/>
                 <constraint firstItem="FAL-vu-KS3" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="Hmx-je-ork"/>
-                <constraint firstAttribute="trailing" secondItem="efa-EU-p9l" secondAttribute="trailing" id="KcK-v5-Ww4"/>
-                <constraint firstItem="efa-EU-p9l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SrA-Sw-gEK"/>
-                <constraint firstItem="FAL-vu-KS3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZMQ-56-ggE"/>
+                <constraint firstItem="efa-EU-p9l" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailingMargin" id="KcK-v5-Ww4"/>
+                <constraint firstItem="efa-EU-p9l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="SrA-Sw-gEK"/>
+                <constraint firstItem="FAL-vu-KS3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="ZMQ-56-ggE"/>
                 <constraint firstItem="FAL-vu-KS3" firstAttribute="top" secondItem="efa-EU-p9l" secondAttribute="bottom" id="h5H-IZ-DGq"/>
                 <constraint firstItem="efa-EU-p9l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="nRW-VS-H0t"/>
                 <constraint firstItem="FAL-vu-KS3" firstAttribute="height" secondItem="efa-EU-p9l" secondAttribute="height" multiplier="0.2" id="zNd-1m-bVn"/>
             </constraints>
             <size key="customSize" width="206" height="200"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="contentView.layer.masksToBounds" value="NO"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="imageViewHeightLayoutConstraint" destination="Im3-VM-ori" id="tMp-Kc-3tD"/>
                 <outlet property="sourceLogoImageView" destination="efa-EU-p9l" id="2ax-pj-DMy"/>
