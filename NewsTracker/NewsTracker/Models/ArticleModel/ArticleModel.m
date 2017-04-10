@@ -17,7 +17,10 @@
         self.title = [dictionary objectForKey:@"title"];
         self.articleDescription = [dictionary objectForKey:@"description"];
         self.URL = [NSURL URLWithString:[dictionary objectForKey:@"url"]];
-        self.imageURL = [NSURL URLWithString:[dictionary objectForKey:@"urlToImage"]];
+        NSString * imageURL = [dictionary objectForKey:@"urlToImage"];
+        if(imageURL) {
+            self.imageURL = [NSURL URLWithString:imageURL];
+        }
         
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         [dateFormatter setDateFormat:@"yyyy-MMM-dd'T'HH:mm:ssZ"];

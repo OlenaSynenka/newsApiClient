@@ -17,4 +17,6 @@
 @property (nonatomic, strong) NSURL *imageURL;
 @property (nonatomic, strong) NSDate *publishedAt;
 
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
+
 @end

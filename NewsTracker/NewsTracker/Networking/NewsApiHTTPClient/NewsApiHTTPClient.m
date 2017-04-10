@@ -6,8 +6,7 @@
 //  Copyright © 2017 Olena Synenka. All rights reserved.
 //
 
-#define BASE_URL            @"https://newsapi.org/v1"
-#define API_Key             @"5b5a855fd1bc47508bdcdf3e1c16d3ee"
+#define BASE_URL            @"https://newsapi.org"
 
 #import "NewsApiHTTPClient.h"
 

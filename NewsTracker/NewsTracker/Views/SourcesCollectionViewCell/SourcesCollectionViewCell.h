@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *sourceLogoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *sourceNameLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewHeightLayoutConstraint;
 
 @end

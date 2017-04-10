@@ -23,9 +23,12 @@ typedef enum {
 @interface SourceModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *ID;
 @property (nonatomic, strong) NSString *sourceDescription;
 @property (nonatomic, strong) NSString *category;
 @property (nonatomic, strong) NSString * language;
 @property (nonatomic, strong) NSURL *logoURL;
+
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 @end

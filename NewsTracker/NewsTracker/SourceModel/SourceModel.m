@@ -17,7 +17,8 @@
         self.sourceDescription = [dictionary objectForKey:@"description"];
         self.category = [dictionary objectForKey:@"category"];
         self.language = [dictionary objectForKey:@"language"];
-        self.logoURL = [NSURL URLWithString:[[dictionary objectForKey:@"urlsToLogos"] objectForKey:@"large"]];
+        self.logoURL = [NSURL URLWithString:[[dictionary objectForKey:@"urlsToLogos"] objectForKey:@"small"]];
+        self.ID = [dictionary objectForKey:@"id"];
     }
     return self;
 }

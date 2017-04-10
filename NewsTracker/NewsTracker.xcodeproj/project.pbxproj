@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595D07E51E9ADDEC00868535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595D07E41E9ADDEC00868535 /* Main.storyboard */; };
+		595D07EA1E9AE09900868535 /* SourcesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D07E81E9AE09900868535 /* SourcesCollectionViewCell.m */; };
+		595D07EB1E9AE09900868535 /* SourcesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595D07E91E9AE09900868535 /* SourcesCollectionViewCell.xib */; };
+		595D07EF1E9AE7B900868535 /* SourcesCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D07EE1E9AE7B900868535 /* SourcesCollectionViewLayout.m */; };
+		595D07F31E9B3B3B00868535 /* SourcesLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D07F21E9B3B3B00868535 /* SourcesLayoutAttributes.m */; };
+		595D07F71E9B7FB200868535 /* ArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D07F61E9B7FB200868535 /* ArticlesViewController.m */; };
+		595D07FC1E9B8C2500868535 /* ArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D07FA1E9B8C2500868535 /* ArticleTableViewCell.m */; };
+		595D07FF1E9B8C8C00868535 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595D07FE1E9B8C8C00868535 /* ArticleTableViewCell.xib */; };
+		595D08031E9BB62700868535 /* PopoverPresentationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D08021E9BB62700868535 /* PopoverPresentationVC.m */; };
+		595D08071E9BB6D100868535 /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595D08061E9BB6D100868535 /* PopoverTableViewCell.m */; };
 		5980035A1E9675CF00C1314A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003591E9675CF00C1314A /* main.m */; };
 		5980035D1E9675CF00C1314A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980035C1E9675CF00C1314A /* AppDelegate.m */; };
-		598003631E9675CF00C1314A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003611E9675CF00C1314A /* Main.storyboard */; };
 		598003651E9675CF00C1314A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598003641E9675CF00C1314A /* Assets.xcassets */; };
 		598003681E9675CF00C1314A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598003661E9675CF00C1314A /* LaunchScreen.storyboard */; };
 		5980037A1E96811D00C1314A /* NewsApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 598003791E96811D00C1314A /* NewsApiHTTPClient.m */; };
@@ -21,11 +30,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		595D07E41E9ADDEC00868535 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		595D07E71E9AE09900868535 /* SourcesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourcesCollectionViewCell.h; sourceTree = "<group>"; };
+		595D07E81E9AE09900868535 /* SourcesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourcesCollectionViewCell.m; sourceTree = "<group>"; };
+		595D07E91E9AE09900868535 /* SourcesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourcesCollectionViewCell.xib; sourceTree = "<group>"; };
+		595D07ED1E9AE7B900868535 /* SourcesCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourcesCollectionViewLayout.h; path = SourcesCollectionviewLayout/SourcesCollectionViewLayout.h; sourceTree = "<group>"; };
+		595D07EE1E9AE7B900868535 /* SourcesCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourcesCollectionViewLayout.m; path = SourcesCollectionviewLayout/SourcesCollectionViewLayout.m; sourceTree = "<group>"; };
+		595D07F11E9B3B3B00868535 /* SourcesLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourcesLayoutAttributes.h; path = SourcesLayoutAttributes/SourcesLayoutAttributes.h; sourceTree = "<group>"; };
+		595D07F21E9B3B3B00868535 /* SourcesLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourcesLayoutAttributes.m; path = SourcesLayoutAttributes/SourcesLayoutAttributes.m; sourceTree = "<group>"; };
+		595D07F51E9B7FB200868535 /* ArticlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticlesViewController.h; path = Controllers/ArticlesListViewController/ArticlesViewController.h; sourceTree = "<group>"; };
+		595D07F61E9B7FB200868535 /* ArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticlesViewController.m; path = Controllers/ArticlesListViewController/ArticlesViewController.m; sourceTree = "<group>"; };
+		595D07F91E9B8C2500868535 /* ArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleTableViewCell.h; path = Views/ArticlesCollectionViewCell/ArticleTableViewCell.h; sourceTree = "<group>"; };
+		595D07FA1E9B8C2500868535 /* ArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleTableViewCell.m; path = Views/ArticlesCollectionViewCell/ArticleTableViewCell.m; sourceTree = "<group>"; };
+		595D07FE1E9B8C8C00868535 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArticleTableViewCell.xib; path = Views/ArticlesCollectionViewCell/ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		595D08011E9BB62700868535 /* PopoverPresentationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopoverPresentationVC.h; path = Controllers/PopoverPresentationVC/PopoverPresentationVC.h; sourceTree = "<group>"; };
+		595D08021E9BB62700868535 /* PopoverPresentationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopoverPresentationVC.m; path = Controllers/PopoverPresentationVC/PopoverPresentationVC.m; sourceTree = "<group>"; };
+		595D08051E9BB6D100868535 /* PopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopoverTableViewCell.h; path = Views/PopoverTableViewCell/PopoverTableViewCell.h; sourceTree = "<group>"; };
+		595D08061E9BB6D100868535 /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopoverTableViewCell.m; path = Views/PopoverTableViewCell/PopoverTableViewCell.m; sourceTree = "<group>"; };
 		598003551E9675CF00C1314A /* NewsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598003591E9675CF00C1314A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5980035B1E9675CF00C1314A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5980035C1E9675CF00C1314A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		598003621E9675CF00C1314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		598003641E9675CF00C1314A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		598003671E9675CF00C1314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		598003691E9675CF00C1314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +98,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		595D07E61E9AE09900868535 /* SourcesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				595D07E71E9AE09900868535 /* SourcesCollectionViewCell.h */,
+				595D07E81E9AE09900868535 /* SourcesCollectionViewCell.m */,
+				595D07E91E9AE09900868535 /* SourcesCollectionViewCell.xib */,
+			);
+			name = SourcesCollectionViewCell;
+			path = Views/SourcesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		595D07EC1E9AE75F00868535 /* SourcesCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				595D07ED1E9AE7B900868535 /* SourcesCollectionViewLayout.h */,
+				595D07EE1E9AE7B900868535 /* SourcesCollectionViewLayout.m */,
+			);
+			name = SourcesCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		595D07F01E9B3A9300868535 /* SourcesLayoutAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				595D07F11E9B3B3B00868535 /* SourcesLayoutAttributes.h */,
+				595D07F21E9B3B3B00868535 /* SourcesLayoutAttributes.m */,
+			);
+			name = SourcesLayoutAttributes;
+			sourceTree = "<group>";
+		};
+		595D07F41E9B7F8A00868535 /* ArticlesListVC */ = {
+			isa = PBXGroup;
+			children = (
+				595D07F51E9B7FB200868535 /* ArticlesViewController.h */,
+				595D07F61E9B7FB200868535 /* ArticlesViewController.m */,
+			);
+			name = ArticlesListVC;
+			sourceTree = "<group>";
+		};
+		595D07F81E9B8BE800868535 /* ArticlesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				595D07F91E9B8C2500868535 /* ArticleTableViewCell.h */,
+				595D07FA1E9B8C2500868535 /* ArticleTableViewCell.m */,
+				595D07FE1E9B8C8C00868535 /* ArticleTableViewCell.xib */,
+			);
+			name = ArticlesTableViewCell;
+			sourceTree = "<group>";
+		};
+		595D08001E9BB5C900868535 /* PopoverPresentationVC */ = {
+			isa = PBXGroup;
+			children = (
+				595D08011E9BB62700868535 /* PopoverPresentationVC.h */,
+				595D08021E9BB62700868535 /* PopoverPresentationVC.m */,
+			);
+			name = PopoverPresentationVC;
+			sourceTree = "<group>";
+		};
+		595D08041E9BB6BD00868535 /* PopoverTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				595D08051E9BB6D100868535 /* PopoverTableViewCell.h */,
+				595D08061E9BB6D100868535 /* PopoverTableViewCell.m */,
+			);
+			name = PopoverTableViewCell;
+			sourceTree = "<group>";
+		};
 		5980034C1E9675CF00C1314A = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +190,9 @@
 				598003711E96769900C1314A /* Controllers */,
 				598003701E96769100C1314A /* Views */,
 				5980036F1E96768700C1314A /* Models */,
-				598003611E9675CF00C1314A /* Main.storyboard */,
 				598003641E9675CF00C1314A /* Assets.xcassets */,
 				598003661E9675CF00C1314A /* LaunchScreen.storyboard */,
+				595D07E41E9ADDEC00868535 /* Main.storyboard */,
 				598003691E9675CF00C1314A /* Info.plist */,
 				598003581E9675CF00C1314A /* Supporting Files */,
 			);
@@ -128,6 +219,9 @@
 		598003701E96769100C1314A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				595D08041E9BB6BD00868535 /* PopoverTableViewCell */,
+				595D07F81E9B8BE800868535 /* ArticlesTableViewCell */,
+				595D07E61E9AE09900868535 /* SourcesCollectionViewCell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -135,6 +229,10 @@
 		598003711E96769900C1314A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				595D08001E9BB5C900868535 /* PopoverPresentationVC */,
+				595D07F41E9B7F8A00868535 /* ArticlesListVC */,
+				595D07F01E9B3A9300868535 /* SourcesLayoutAttributes */,
+				595D07EC1E9AE75F00868535 /* SourcesCollectionViewLayout */,
 				598003841E96C91700C1314A /* SourcesListVC */,
 			);
 			name = Controllers;
@@ -265,9 +363,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595D07FF1E9B8C8C00868535 /* ArticleTableViewCell.xib in Resources */,
+				595D07E51E9ADDEC00868535 /* Main.storyboard in Resources */,
+				595D07EB1E9AE09900868535 /* SourcesCollectionViewCell.xib in Resources */,
 				598003681E9675CF00C1314A /* LaunchScreen.storyboard in Resources */,
 				598003651E9675CF00C1314A /* Assets.xcassets in Resources */,
-				598003631E9675CF00C1314A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,26 +427,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				5980035D1E9675CF00C1314A /* AppDelegate.m in Sources */,
+				595D07EA1E9AE09900868535 /* SourcesCollectionViewCell.m in Sources */,
 				5980035A1E9675CF00C1314A /* main.m in Sources */,
+				595D07F71E9B7FB200868535 /* ArticlesViewController.m in Sources */,
+				595D07FC1E9B8C2500868535 /* ArticleTableViewCell.m in Sources */,
 				598003871E96C95200C1314A /* SourcesListVCViewController.m in Sources */,
 				5980037D1E96842200C1314A /* ArticleModel.m in Sources */,
 				598003801E968A1900C1314A /* SourceModel.m in Sources */,
+				595D07EF1E9AE7B900868535 /* SourcesCollectionViewLayout.m in Sources */,
+				595D07F31E9B3B3B00868535 /* SourcesLayoutAttributes.m in Sources */,
 				598003831E9695BE00C1314A /* NetworkService.m in Sources */,
+				595D08031E9BB62700868535 /* PopoverPresentationVC.m in Sources */,
 				5980037A1E96811D00C1314A /* NewsApiHTTPClient.m in Sources */,
+				595D08071E9BB6D100868535 /* PopoverTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		598003611E9675CF00C1314A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				598003621E9675CF00C1314A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		598003661E9675CF00C1314A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
